@@ -8,6 +8,7 @@
         <title>James Orr - Homepage</title>
         <link rel="icon" type="image/x-icon" href="images/BlockheadIcon.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <nav class="navbar has-shadow is-black">
@@ -30,21 +31,29 @@
                         <a class="navbar-item" href="#work">Work Experience</a>
                         <a class="navbar-item" href="#personal">Personal Projects</a>
                         <a class="navbar-item" href="#art">Standalone Art</a>
+                        <a class="navbar-item" href="#collab">Collaborative Works</a>
                     </div>
                 </div>
-                <a class="navbar-item has-text-light" href="contacts.html">Contact</a>
             </div>
         </nav>
 
         <div class="content container ml-5 mr-5">
             <a name="academic"></a>
-            <h1 class="is-size-2 is-underlined mt-5 mr-5 mb-5">Academic Work</h1></a>
-            <div id="circleBlastText" style="padding-bottom: 25px;">
-                <h2 class="is-size-4 has-text-weight-bold">Reach for the Stars</h2>
-                <div class="columns">
-                    <div class="column"><img src="images/circleBlast1.png"></div>
-                    <div class="column"><img src="images/circleBlast2.png"></div>
+            <h1 class="is-size-2 is-underlined mt-5 mr-5 mb-5 has-text-light">Academic Work</h1></a>
+            
+            <div id="showcaseItem">
+                <div class="slideshow-container">
+                    <h2 class="is-size-4 has-text-weight-bold has-text-centered">Reach for the Stars</h2>
+                    <div class="slideshow1">
+                        <img src="images/circleBlast1.png">
+                    </div>
+                    <div class="slideshow1">
+                        <img src="images/circleBlast2.png">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                 </div>
+                
                 <p>One of the first major projects I put out was my final project for the <b>IGME 235 Intro To Web Technology</b> class at
                 the Rochester Institute of Technology was 'Reach for the Stars'. A simple modification of the 'Circle Blast' game programmed 
                 as an earlier exercise, this simple Javascript game provides a rudamentary space shooter with fifteen levels, sound effects, 
@@ -53,23 +62,37 @@
                 <p><a href="https://people.rit.edu/~jpo3042/235/JamesOrr_Project3/game.html">Link to 'Reach for the Stars'</a>- <u>NOT</u> desgined for mobile</p>
             </div>
 
-            <div id="phyllotaxisText" style="padding-bottom: 25px;">
-                <h2 class="is-size-4 has-text-weight-bold">Phyllotaxis / Algortihm Botany</h2>
-                <img src="images/phyllotaxis.jpg">
-                <p>As part of the <b>IGME 330 Rich Media Web App Development</b> Class, we were instructed to use the Canvas API to 
-                create a phyllotaxis spiral using an algorithm in Javascript. The above picture is the result of one of the
-                generated patterns. The instructions were to generate this algorithm to work with buttons that would pause / resume 
-                and restart the pattern and a seperate button to export the current state of the canvas to an image file. We were
-                told to be creative with the projects, so I provided five different options for colors that generate in different ways.</p>
-                <a href="https://people.rit.edu/~jpo3042/330/algorithmic-botany/phyllotaxis.html" style="text-decoration: underline;">Link to Algorithmic Botany Project</a>
+            <div id="showcaseItem">
+                <h2 class="is-size-4 has-text-weight-bold has-text-centered">Phyllotaxis / Algortihm Botany</h2>
+                <div class="columns">
+                    <div class="column">
+                        <img class="soloImage" src="images/phyllotaxis.jpg">
+                    </div>
+                    <div class="column">
+                        <p>As part of the <b>IGME 330 Rich Media Web App Development</b> Class, we were instructed to use the Canvas API to 
+                            create a phyllotaxis spiral using an algorithm in Javascript. The above picture is the result of one of the
+                            generated patterns. The instructions were to generate this algorithm to work with buttons that would pause / resume 
+                            and restart the pattern and a seperate button to export the current state of the canvas to an image file. We were
+                            told to be creative with the projects, so I provided five different options for colors that generate in different ways.</p>
+                            <a href="https://people.rit.edu/~jpo3042/330/algorithmic-botany/phyllotaxis.html" style="text-decoration: underline;">Link to Algorithmic Botany Project</a>
+                    </div>
+                </div>
             </div>
 
-            <div id="audioVisualizerText" style="padding-bottom: 25px;">
-                <h2 class="is-size-4 has-text-weight-bold">Audio Visualizer</h2>
-                <div class="columns">
-                    <div class="column"><img src="images/visualizerRecord.jpg"></div>
-                    <div class="column"><img src="images/visualizerDisco.jpg"></div>
-                    <div class="column"><img src="images/visualizerLines.jpg"></div>
+            <div id="showcaseItem">
+                <div class="slideshow-container">
+                    <h2 class="is-size-4 has-text-weight-bold has-text-centered">Audio Visualizer</h2>
+                    <div class="slideshow2">
+                        <img src="images/visualizerRecord.jpg">
+                    </div>
+                    <div class="slideshow2">
+                        <img src="images/visualizerDisco.jpg">
+                    </div>
+                    <div class="slideshow2">
+                        <img src="images/visualizerLines.jpg">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
                 </div>
                 <p>One other project for the <b>IGME 330</b> class as mentioned above was to create an audio visualizer assignment that read
                 music using Javascript and convert that music into data that would update on a Canvas. The style of the visualizer was up
@@ -80,8 +103,8 @@
                 <a href="https://people.rit.edu/~jpo3042/330/project-2/home.html" style="text-decoration: underline;">Link to Audio Visualizer Project</a>
             </div>
 
-            <div id="levelDesignText" style="padding-bottom: 25px;">
-                <h2 class="is-size-4 has-text-weight-bold">Level Design Builds</h2>
+            <div id="showcaseItem">
+                <h2 class="is-size-4 has-text-weight-bold has-text-centered">Level Design Builds</h2>
                 <p>As part of the <b>IGME 420 Level Design</b> class, three major projects were to apply the concepts we've learned throughout the semester and
                 create levels in various genres using those concepts. The games provided were 2D platformer <b>Battleblock Theater</b>, puzzle-platformer
                 <b>Portal 2</b>, and a first person shooter of our choice, my choice being <b>Quake</b>. The very last project was to choose our favorite level we 
@@ -147,7 +170,7 @@
                 </div>
             </div>
 
-            <div id="interactiveNarrativeText" style="padding-bottom: 25px;">
+            <div id="showcaseItem">
                 <h2 class="is-size-4 has-text-weight-bold">'Don't Push Your Luck' Interactive Story</h2>
                 <img src="images/interactiveGameScreenshot.png" style="width: 50%;">
                 <p>The culmination of my work for the <b>IGME 529 Foundation of Interactive Narrative</b> class is in the story 'Don't Push Your Luck'.
@@ -162,14 +185,23 @@
 
         <div class="content container ml-5 mr-5">
             <a name="work"></a>
-            <h1 class="is-size-2 is-underlined mt-5 mr-5 mb-5">Work Experience</h1></a>
-            <div id="changelingText">
-                <h2 class="is-size-4 has-text-weight-bold">Changeling</h2>
-                <div class="columns">
-                    <div class="column"><img src="images/changelingSubwayAnimated.gif"></div>
-                    <div class="column"><img src="images/changelingClockAnimated.gif"></div>
-                    <div class="column"><img src="images/changelingBookAnimated.gif"></div>
+            <h1 class="is-size-2 is-underlined mt-5 mr-5 mb-5 has-text-light">Work Experience</h1></a>
+            <div id="showcaseItem">
+                <div class="slideshow-container">
+                    <h2 class="is-size-4 has-text-weight-bold has-text-centered">Changeling VR</h2>
+                    <div class="slideshow3">
+                        <img src="images/changelingSubwayAnimated.gif">
+                    </div>
+                    <div class="slideshow3">
+                        <img src="images/changelingClockAnimated.gif">
+                    </div>
+                    <div class="slideshow3">
+                        <img src="images/changelingBookAnimated.gif">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
                 </div>
+                <h2 class="is-size-4 has-text-weight-bold">Changeling</h2>
                 <p>In the Summer of 2022, I was brought on board as a 3D Asset Designer for <b>Changeling</b>, a virtual reality narrative experience. 
                 I worked alongside others to model, texture, and animate several of the assets used in the game, which I created with Blender. The 
                 above images are some of the items that I created for the project, taking what I've learned from previous asset design classes and 
@@ -182,13 +214,21 @@
 
         <div class="content container ml-5 mr-5">
             <a name="personal"></a>
-            <h1 class="is-size-2 is-underlined mt-5 mr-5 mb-5">Personal Projects</h1>
+            <h1 class="is-size-2 is-underlined mt-5 mr-5 mb-5 has-text-light">Personal Projects</h1>
+            <div id="showcaseItem">
+                <h2 class="is-size-4 has-text-weight-bold">Micro Miner</h2>
+                <p>Micro Miner is a small personal project made in Gamemaker Studio 2. A primary inspiration to the game was <b>Major Havoc</b> which
+                my father introduced me to, as well as the aesthetics of low-bit systems like the ZX Spectrum. In the game, you control the eponymous
+                Micro Miner, who recieves a S.O.S. signal from a local mining facility and must venture inside to find the sender while collecting items
+                to enhance progression and any bit of loot on his way inside.
+                </p>
+            </div>
         </div>
 
         <div class="content container ml-5 mr-5">
             <a name="art"></a>
-            <h1 class="is-size-2 is-underlined mt-5 mr-5 mb-5">Standalone Art</h1></a>
-            <div id="photoshopText">
+            <h1 class="is-size-2 is-underlined mt-5 mr-5 mb-5 has-text-light">Standalone Art</h1></a>
+            <div id="showcaseItem">
                 <h2 class="is-size-4 has-text-weight-bold">Photoshop</h2>
                 <div class="columns is-flex">
                     <div class="column is-one-third"><img src="images/SpaceBackground1.png"></div>
@@ -203,6 +243,39 @@
             </div>
         </div>
 
+        <div class="content container ml-5 mr-5">
+            <a name="collab"></a>
+            <h1 class="is-size-2 is-underlined mt-5 mr-5 mb-5 has-text-light">Collaborative Works</h1>
+            <div id="showcaseItem">
+                <h2 class="is-size-4 has-text-weight-bold has-text-centered">The Anomolous Tapes</h2>
+                <div class="column is-flex">
+                    <div class="column"><iframe width="100%" height="350px" src="https://youtu.be/CuBjyyT2EYs?si=Y51ZHuo324RgP4vA"></iframe></div>
+                    <div class="column"><iframe width="100%" height="350px" src="https://youtu.be/Eqbfo_GKyng?si=K-1vlc2AFrqG_iMo"></iframe></div>
+                </div>
+                <p>A friend and fellow animator / game designer, Jayde, asked around a group of artists I am a member of for anyone willing to do voice 
+                work for an analog horror series she was working on, which I chose to help with. In this series, The Anomolous Tapes, I played the voices
+                for an employee of the Spectral Anomoly Society, as well as the voice of a primary character, Jeremiah Davis. I recorded the lines using 
+                Audacity with some slight editing before sending it to Jayde to edit the videos.
+                </p>
+            </div>
+
+            <div id="showcaseItem">
+                <h2 class="is-size-4 has-text-weight-bold has-text-centered">ERSolsitce</h2>
+                <div class="column is-flex">
+                    <div class="column"><img src="images/solsticePNGTuber.png"></div>
+                    <div class="column"><img src="images/solsticeStreamStart.gif"></div>
+                </div>
+                <p>During my junior year at RIT, I found an advertisment on campus for ERSolstice, a student who streamed video games of Twitch. I became a 
+                reccurent viewer, and soon propsed to help out as a channel artist, with my main contribution being Solstice's PNGTuber. Solstice came up with
+                the idea for the design before I drew the images used for the model in Adobe Photoshop, as well as searching for tutorials to set up the PNGTuber
+                in OBS. Recently I contributed another piece for the channel in the form of the 'Starting Soon' screen, which I made by creating sprites based on
+                the PNGTuber, and creating the assets, shaders, and animations in Blender.
+                </thead>
+                </p>
+            </div>
+        </div>
+
         <script src="src/headerControls.js"></script>
+        <script src="src/slideshowControls.js"></script>
     </body>
 </html>

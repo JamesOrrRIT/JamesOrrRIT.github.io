@@ -1,0 +1,66 @@
+body {
+    background-color: rgba(80, 80, 80, 1);
+}
+
+a.segment {
+    border: 2px solid turquoise;
+    border-radius: 5px;
+    background-color: darkseagreen;
+}
+
+.soloImage {
+    position: relative;
+    min-width: 300px;
+    width: 90%;
+    margin: auto;
+}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  min-width: 300px;
+  width: 50%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+#showcaseItem {
+    border: 4px solid white;
+    border-radius: 5px;
+    background-color: darkgrey;
+    margin-bottom: 25px;
+    padding: 50px;
+}
