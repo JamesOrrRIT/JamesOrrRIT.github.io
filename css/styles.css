@@ -64,3 +64,12 @@ img {vertical-align: middle;}
     margin-bottom: 25px;
     padding: 50px;
 }
+
+#showcaseItem > p {
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+footer {
+    padding-bottom: 25px;
+}
