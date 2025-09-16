@@ -73,3 +73,81 @@ img {vertical-align: middle;}
 footer {
     padding-bottom: 25px;
 }
+
+/*Friends of James Jokers */
+table {
+    border:1px solid black;
+    width: 90%;
+    margin: auto;
+}
+
+tr, th {
+    border:1px solid black;
+}
+
+.joker {
+    display: inline-block;
+    margin: auto 6px;
+    background-image: url("../images/friendsOfJames_JokersSheet.png");
+    background-repeat: no-repeat;
+}
+
+.joker.tech {
+    width: 213px;
+    height: 285px;
+    background-position: 0 0;
+}
+
+.joker.jestro {
+    width: 213px;
+    height: 285px;
+    background-position: -213px 0;
+}
+
+.joker.sandwich {
+    width: 213px;
+    height: 285px;
+    background-position: -426px 0;
+}
+
+.joker.cito {
+    width: 213px;
+    height: 285px;
+    background-position: -639px 0;
+}
+
+.joker.blockhead {
+    width: 213px;
+    height: 285px;
+    background-position: -852px 0;
+}
+
+.joker.void {
+    width: 213px;
+    height: 285px;
+    background-position: 0 -285px;
+}
+
+.joker.latte {
+    width: 213px;
+    height: 285px;
+    background-position: -213px -285px;
+}
+
+.joker.solstice {
+    width: 213px;
+    height: 285px;
+    background-position: -426px -285px;
+}
+
+.joker.keksi {
+    width: 213px;
+    height: 285px;
+    background-position: -639px -285px;
+}
+
+.joker.moki {
+    width: 213px;
+    height: 285px;
+    background-position: -852px -285px;
+}
