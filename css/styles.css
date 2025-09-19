@@ -76,13 +76,91 @@ footer {
 
 /*Friends of James Jokers */
 table {
-    border:1px solid black;
-    width: 90%;
+    border: 3px solid black;
+    width: 85%;
     margin: auto;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
 }
 
 tr, th {
-    border:1px solid black;
+    border: 3px solid black;
+}
+
+tr > td:nth-child(1) {
+    width: 20%;
+}
+
+tr > td:nth-child(2) {
+    width: 25%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    vertical-align: middle;
+}
+
+tr > td:nth-child(3) {
+    width: 40%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.common {
+    background-color: dodgerblue;
+    border-radius: 6px 6px 6px 6px;
+    color: white;
+}
+
+.uncommon {
+    background-color: mediumseagreen;
+    border-radius: 6px 6px 6px 6px;
+    color: white;
+}
+
+.illustrious > a, p > .illustrious {
+    background-color: goldenrod;
+    border-radius: 6px 6px 6px 6px;
+    color: white;
+}
+
+.bonus {
+    color: blue;
+}
+
+.addmult {
+    color: red;
+}
+
+.xmult {
+    background-color: red;
+    border-radius: 6px 6px 6px 6px;
+    color: white;
+}
+
+.highlight {
+    color: darkgoldenrod;
+}
+
+.greyed {
+    color: darkgray;
+}
+
+.chance {
+    color: green;
+}
+
+.planet {
+    color: darkcyan;
+}
+
+.spectral {
+    color: darkblue;
+}
+
+.ability {
+    background-color: darkmagenta;
+    border-radius: 6px 6px 6px 6px;
+    color: white;
 }
 
 .joker {
@@ -92,62 +170,182 @@ tr, th {
     background-repeat: no-repeat;
 }
 
-.joker.tech {
+.joker.salt {
     width: 213px;
     height: 285px;
     background-position: 0 0;
 }
 
-.joker.jestro {
+.joker.kerosene {
     width: 213px;
     height: 285px;
     background-position: -213px 0;
 }
 
-.joker.sandwich {
+.joker.earner {
     width: 213px;
     height: 285px;
     background-position: -426px 0;
 }
 
-.joker.cito {
+.joker.pomegranete {
     width: 213px;
     height: 285px;
     background-position: -639px 0;
 }
 
-.joker.blockhead {
+.joker.reciept {
     width: 213px;
     height: 285px;
     background-position: -852px 0;
 }
 
-.joker.void {
+.joker.daredevil {
     width: 213px;
     height: 285px;
     background-position: 0 -285px;
 }
 
-.joker.latte {
+.joker.canvas {
     width: 213px;
     height: 285px;
     background-position: -213px -285px;
 }
 
-.joker.solstice {
+.joker.paintcanvas {
     width: 213px;
     height: 285px;
     background-position: -426px -285px;
 }
 
-.joker.keksi {
+.joker.stainglass {
     width: 213px;
     height: 285px;
     background-position: -639px -285px;
 }
 
-.joker.moki {
+.joker.deal {
     width: 213px;
     height: 285px;
     background-position: -852px -285px;
+}
+
+.joker.sunk {
+    width: 213px;
+    height: 285px;
+    background-position: 0 -570px;
+}
+
+.joker.arsonist {
+    width: 213px;
+    height: 285px;
+    background-position: -213px -570px;
+}
+
+.joker.aftershock {
+    width: 213px;
+    height: 285px;
+    background-position: -426px -570px;
+}
+
+.joker.planner {
+    width: 213px;
+    height: 285px;
+    background-position: -639px -570px;
+}
+
+.joker.philosopher {
+    width: 213px;
+    height: 285px;
+    background-position: -852px -570px;
+}
+
+.joker.fumes {
+    width: 213px;
+    height: 285px;
+    background-position: 0 -855px;
+}
+
+.joker.cashback {
+    width: 213px;
+    height: 285px;
+    background-position: -213px -855px;
+}
+
+.joker.first {
+    width: 213px;
+    height: 285px;
+    background-position: -426px -855px;
+}
+
+.joker.crash {
+    width: 213px;
+    height: 285px;
+    background-position: -639px -855px;
+}
+
+.joker.ijoker {
+    width: 213px;
+    height: 285px;
+    background-position: -852px -855px;
+}
+
+.joker.tech {
+    width: 213px;
+    height: 285px;
+    background-position: 0 -1140px;
+}
+
+.joker.jestro {
+    width: 213px;
+    height: 285px;
+    background-position: -213px -1140px;
+}
+
+.joker.sandwich {
+    width: 213px;
+    height: 285px;
+    background-position: -426px -1140px;
+}
+
+.joker.cito {
+    width: 213px;
+    height: 285px;
+    background-position: -639px -1140px;
+}
+
+.joker.blockhead {
+    width: 213px;
+    height: 285px;
+    background-position: -852px -1140px;
+}
+
+.joker.void {
+    width: 213px;
+    height: 285px;
+    background-position: 0 -1425px;
+}
+
+.joker.latte {
+    width: 213px;
+    height: 285px;
+    background-position: -213px -1425px;
+}
+
+.joker.solstice {
+    width: 213px;
+    height: 285px;
+    background-position: -426px -1425px;
+}
+
+.joker.keksi {
+    width: 213px;
+    height: 285px;
+    background-position: -639px -1425px;
+}
+
+.joker.moki {
+    width: 213px;
+    height: 285px;
+    background-position: -852px -1425px;
 }

@@ -11,6 +11,21 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
+        <nav class="navbar has-shadow is-black">
+            <a class="navbar-item">
+                <img src="images/BlockheadIcon.png" alt="site-logo" style="max-height: 45px" class="py-2 px-2">
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="navbar-menu" id="nav-links">
+                <a class="navbar-item has-text-light" href="index.html">Home</a>
+                <a class="navbar-item has-text-light" href="showcase.html">Back to Showcase</a>
+            </div>
+        </nav>
+
         <table>
             <tr>
                 <th>Card Art</th>
@@ -18,30 +33,185 @@
                 <th>Trivia / Reference</th>
             </tr>
             <tr>
-                <td>Spilled Salt</td>
+                <td><span class="joker salt"></span><p><span class="uncommon"> Spilled Salt </span></p></td>
                 <td>All probabilities are set to 0</td>
                 <td>'Spilled Salt' was originally 'Broken Mirror', but I thought that would conflict with the existing 'Glass Joker'. Both are attributed to bad luck or misfortune, which lead to it's usage of negating luck based effects from occurring.</td>
             </tr>
             <tr>
-                <td>Kerosene</td>
-                <td>1.5X Mult, destroys itself and a random Joker if the score catches fire</td>
+                <td><span class="joker kerosene"></span><p><span class="uncommon"> Kerosene </span></p></td>
+                <td><p><span class="xmult">X2</span> Mult, destroys itself and a random Joker if the score catches fire</td>
                 <td>Kerosene is a flammable liquid used as fuel for light and power. It's ability to combust and destroy itself and another Joker is based on how the players score will light up with a fire effect if the current hand can beat the required score in one hand.</td>
             </tr>
             <tr>
-                <td>Big Earner</td>
-                <td>Bonus and Mult cards will activate each others effect</td>
+                <td><span class="joker earner"></span><p><span class="common"> Big Earner </span></p></td>
+                <td><p><span class="bonus">Bonus</span> and <span class="addmult">Mult</span> cards will apply the effects of the other</p></td>
                 <td>A 'big earner' is defined as someone who makes a lot of money, which I translated to the Bonus and Mult cards that increase score by +30 Chips and +4 Mult respectively.</td>
             </tr>
             <tr>
-                <td>Pomegranete</td>
+                <td><span class="joker pomegranete"></span><p><span class="common"> Pomegranete </span></p></td>
                 <td>Levels up the next three played hands</td>
-                <td>The idea was to create a food joker (which provide a limited effect until they expire) to a Joker that levels up played hands. The choice of a Pomegranete is a reference to the game Hades by Supergiant Games.</td>
+                <td><p>The idea was to create a food joker (which provide a limited effect until they expire) to a Joker that levels up played hands. The choice of a Pomegranete is a reference to the game Hades by Supergiant Games <span class="greyed">(Techhead immediately called me out on that)</span></p></td>
             </tr>
             <tr>
-                <td>Reciept</td>
+                <td><span class="joker reciept"></span><p><span class="common"> Reciept </span></p></td>
                 <td>Earn between $2 and $5 when skipping a Booster Pack</td>
                 <td>Similar to 'Red Card' giving mult when skipping Booster Packs, Reciept focuses on money, such as when getting a refund from an unsatisfactory product.</td>
             </tr>
+            <tr>
+                <td><span class="joker daredevil"></span><p><span class="xmult"> Daredevil </span></p></td>
+                <td><p><span class="addmult">+50 Mult</span>, <span class="highlight">-2 Hand Size</span></p></td>
+                <td>Inspired by the Stuntman Joker of the base game, Daredevil was designed to increase mult while reducing hand size. Like Stuntman, the -2 hand size is inspired by stunt performers driving motorbikes with their hands off the bars.</td>
+            </tr>
+            <tr>
+                <td><span class="joker canvas"></span><p><span class="uncommon"> Canvas </span></p><p><span class="greyed">(Idea by Cito)</span></p></td>
+                <td><p>Transforms into Painted Canvas after scoring 15 more Wild Cards</p></td>
+                <td>Cito's idea for this Joker was to give some bonus to Wild cards, and the idea came about with how Wild cards can be any suit to interpret that as some effect with paint.</td>
+            </tr>
+            <tr>
+                <td><span class="joker paintcanvas"></span><p><span class="uncommon"> Painted Canvas </span></p><p><span class="greyed">(Idea by Cito)</span></p></td>
+                <td><p>Wild Cards give <span class="xmult">X1.5</span> Mult when scored</p></td>
+                <td>Applying the <span class="xmult">X1.5</span> Mult was Cito's original idea, but we eventually decided to make the Canvas Joker into two seperate ones as an interesting twist to build off of the paint theme.</td>
+            </tr>
+            <tr>
+                <td><span class="joker stainglass"></span><p><span class="common"> Stained Glass </span></p></td>
+                <td><p><span class="addmult">+10</span> Mult, increases by <span class="addmult">+10</span> Mult if played hand contains scoring Glass cards of at least two different suits</p></td>
+                <td>Used in both art and architecture, stained glass are collages of multiple pieces of colored glass which relate to using Glass cards of varying suits. The <span class="addmult">+10</span> Mult specifically has no real connection to stained glass in history, and is for the sake of balancing the card.</td>
+            </tr>
+            <tr>
+                <td><span class="joker deal"></span><p><span class="common"> Devilish Deal </span></p><p><span class="greyed">(Idea by RubberhoseRat)</span></p></td>
+                <td><p>Swaps <span class="bonus">Hands</span> and <span class="addmult">Discards</span> when the first hand is drawn.</p></td>
+                <td>The card art depicts the antagonist Bill Cipher from the Gravity Falls series. Bill often makes deals with humans using contracts formed by shaking his hand, thus the idea of swapping playable hands and discards around.</td>
+            </tr>
+            <tr>
+                <td><span class="joker sunk"></span><p><span class="xmult"> Sunk Cost Fallacy </span></p><p><span class="greyed">(Idea by Jestro)</span></p></td>
+                <td><p><span class="xmult">X1.0</span> Mult, increases by <span class="xmult">X0.5</span> if The Wheel Of Fortune does nothing</p></td>
+                <td>The 'sunk cost fallacy' is a phenomenon of continuing a strategy due to all the prior investment to it even if quitting would be beneficial. This relates to the Wheel Of Fortune tarot card being highly saught after for its effect despite it's 1 in 4 chance of success.</td>
+            </tr>
+            <tr>
+                <td><span class="joker arsonist"></span><p><span class="xmult"> Arsonist </span></p><p><span class="greyed">(Idea by Mopster)</span></p></td>
+                <td><p>+0 Chips, When round ends, increase by +5 Chips and lose $2</p></td>
+                <td>The card art and effect are inspired by Heath Ledger's portrayal of the Joker in the movie The Dark Knight, particularly the line "It's not about money. It's about sending a message." The red splash is a reference to a similar design used on a card in a promotional poster for the movie.</td>
+            </tr>
+            <tr>
+                <td><span class="joker aftershock"></span><p><span class="uncommon"> Aftershock </span></p></td>
+                <td><p>Retrigger all played Stone Cards if previous Hand contained a Stone Card</p></td>
+                <td>An aftershock is defined as a smaller earthquake following a larger one, translating to the ability to retrigger Stone card effects the turn after one is played. The art depicts a seismic activity map of the western end of the United States.</td>
+            </tr>
+            <tr>
+                <td><span class="joker planner"></span><p><span class="common"> City Planner </span></p><p><span class="greyed">(Idea by Jestro)</span></p></td>
+                <td><p><span class="addmult">+6</span> Mult for every Stone Card held in hand</p></td>
+                <td>City planners are responsible for overseeing community development projects. Stone cards are substitute for bricks and concrete used in constructing foundations and walls when developing building areas.</td>
+            </tr>
+            <tr>
+                <td><span class="joker philosopher"></span><p><span class="uncommon"> Philosophers Stone </span></p><p><span class="greyed">(Idea by Jestro)</span></p></td>
+                <td><p>Scoring Steel Cards turn into Gold Cards, and vice versa</p></td>
+                <td>In alchemy, the philosophers stone is an alchemical substance capable of transmuting metals to gold. This ties to it's effect of converting Steel cards into Gold cards, which was updated to perform the opposite as well for the sake of balance.</td>
+            </tr>
+            <tr>
+                <td><span class="joker fumes"></span><p><span class="uncommon"> Running On Fumes </span></p></td>
+                <td><p><span class="bonue">+0</span> Chips, increases by +10 for every hand before the final hand, Resets at the end of the round</p></td>
+                <td>The term 'running on fumes' refers to continue functioning on minimal resources, such as a nearly empty tank of gas as depicted in the art. The theme also translates to the cards ability providing a boost to win the round when getting close to a game over.</td>
+            </tr>
+            <tr>
+                <td><span class="joker cashback"></span><p><span class="common"> Cash Back Card </span></p><p><span class="greyed">(Idea by Cito)</span></p></td>
+                <td><p>Any purchase increases end of round payment by $1, Resets at the end of the round</p></td>
+                <td>Cash Back cards return a small amount of what the user has spent with eligible purchases, giving players a small amount of money back with every purchase made in a shop.</td>
+            </tr>
+            <tr>
+                <td><span class="joker first"></span><p><span class="common"> First Try </span></p><p><span class="greyed">(Idea by Cito)</span></p></td>
+                <td><span class="xmult">X3</span> Mult, destroys itself if the round isn't beaten in one hand</td>
+                <td>This was a real simple and quick way to add in a 'Bullseye' sort of card. On it's own, it can clear earlier rounds with ease, which can help score additional money faster to prepare for more elaborate and useful Jokers for later rounds.</td>
+            </tr>
+            <tr>
+                <td><span class="joker crash"></span><p><span class="xmult"> System Crash </span></p></td>
+                <td><p><span class="bonus">+30</span> Chips per level of played hand, <span class="chance">1 in 4 chance</span> to decrease level of played hand</p></td>
+                <td>The art depicts a typical Blue Screen of Death, a fatal error screen on Windows operating systems. The effect was thought up after the art and was designed as a high risk card to take since it can potentially ruin powerful hands.</td>
+            </tr>
+            <tr>
+                <td><span class="joker ijoker"></span><p><span class="xmult"> i, Joker </span></p><p><span class="greyed">(Idea by Jestro)</span></p></td>
+                <td><p>Playing a non-Steel card has a <span class="chance">1 in 4 chance</span> to create a Steel copy with the same rank and suit</p></td>
+                <td>Based on the book and movie 'i, Robot', this Joker destroys existing cards to replace them with Steel cards, connecting to the theme of the story of the dangers of artificial intelligence.</td>
+            </tr>
         </table>
+
+        <div id="showcaseItem">
+                <h2 class="is-size-3 has-text-weight-bold has-text-centered">New Rarity - Illustrious</h2>
+                <div class="column is-flex">
+                    <div class="column">
+                        <img src="images/friendsOfJames_Core.png">
+                    </div>
+                    <div class="column">
+                        <p>A new Spectral card is avaiable with this mod, the brand new <b>Core</b> card. This new card has a chance of appearing through the same means of any other Spectral card, 
+                            through <b>Séance</b>, <b>Sixth Sense</b>, or any Spectral Pack. With about the same rarity as <b>The Soul</b> (0.3%), The Core can summon one of the all new <span class="illustrious">Illustrious</span>
+                            Jokers based on myself and some close friends. The effects of each new card are as follows. Links are provided when possible through clicking on their name.</p>
+                    </div>
+                </div>
+            </div>
+
+        <table>
+            <tr>
+                <th>Card Art</th>
+                <th>Description</th>
+                <th>Trivia / Reference</th>
+            </tr>
+            <tr>
+                <td><span class="joker tech"></span><p><span class="illustrious"><a href="https://www.twitch.tv/techhead_d">Techhead</a></span></p></td>
+                <td><p><span class="ability">--Steel Supremacy--</span></p><p>Steel Cards <span class="highlight">retrigger twice</span> when played.</p></td>
+                <td>The effect of this card was designed by Techhead himself who wanted a card that synergized well with Steel cards. The art background depicts Aseprite, the pixel art software both of us use for assets.</td>
+            </tr>
+            <tr>
+                <td><span class="joker jestro"></span><p><span class="illustrious"><a href="https://jestrothedm.itch.io"> Jestro </a></span></p></td>
+                <td><p><span class="ability">--Chaos, CHAOS--</span></p><p><span class="chance">1 in 4 chance</span> for each of the following: <span class="bonus">+50 Chips</span>, <span class="addmult">+5 Mult</span>, <span class="xmult">X1.5</span> Mult, and <span class="highlight">$5</span>. If no effect triggers, <span class="xmult">X2</span> Mult and <span class="highlight">$10</span></p></td>
+                <td>Jestro's idea took a little time to grow on me, but the chaotic aspect really fit as a fun idea to add to the game. The 7-sided color wheel in the art is a reference to the elemental system of his game Crusader.</td>
+            </tr>
+            <tr>
+                <td><span class="joker sandwich"></span><p><span class="illustrious">Chicken Sandwich</span></p></td>
+                <td><p><span class="ability">--Potassium Power--</span></p><p>When the first hand is drawn, <span class="chance">1 in 10 chance</span> to create either a Gros Michel or Cavendish</p></td>
+                <td>Funnily enough, Sandwich wanted his card to connect to the banana Jokers Gros Michel and Cavendish. I wanted to make a third banana themed Joker he would generated called a 'Faux Michel', but decided to create either of the base Jokers because it would be funny.</td>
+            </tr>
+            <tr>
+                <td><span class="joker cito"></span><p><span class="illustrious">Cito</span></p></td>
+                <td><p><span class="ability">--Offering--</span></p><p>After Boss Blind is defeated, create a random Rare, Negative, Polychrome, Ethereal, Coupon, Double, or Charm Tag</p></td>
+                <td>Unlike some other friends for this group of cards, Cito didn't have his own avatar, so he let me take the reins to create card art with his suggestion to base it off of the Broken Vessel boss and Joni's Repose location from Hollow Knight.</td>
+            </tr>
+            <tr>
+                <td><span class="joker blockhead"></span><p><span class="illustrious">Blockhead</span></p></td>
+                <td><p><span class="ability">--Time Warp--</span></p><p>If Boss Blind is beaten with at least <span class="highlight">$10</span> on hand, spend that much to decrease Ante by 1, Cost doubles with every use</p></td>
+                <td>Blockhead is my own internet persona, and the ability being called 'Time Warp' refers to my love for older games and aesthetics. The card background being a vaporware scene within Windows XP relates to this as well.</td>
+            </tr>
+            <tr>
+                <td><span class="joker void"></span><p><span class="illustrious">Void</span></p></td>
+                <td><p><span class="ability">--Crazy 8s--</span></p><p><span class="xmult">X1.0</span> Mult, increases by <span class="xmult">X0.08</span> Mult when an 8 of Spades is played or <span class="xmult">X0.16</span> when scored</p></td>
+                <td>Void likes to represent their avatar with either a skull or an 8 of Spades, and chose to base their effect around that card specifically.</td>
+            </tr>
+            <tr>
+                <td><span class="joker latte"></span><p><span class="illustrious"><a href="https://x.com/FeatheryLatte">FeatheryLatte</a></span></p></td>
+                <td><p><span class="ability">--Stargazer--</span></p><p>Sell 4 more <span class="planet">Planet</span> cards to create a <span class="spectral">Black Hole</span> card.</p></td>
+                <td>Latte was unfamiliar with the rules of Balatro, so I elected to create an effect based on her persona's constellation theme. The effect of destroying Planet cards to create the rare Black Hole Spectral card seemed like a good way to balance less specific hands being upgraded in favor of every hand getting slightly better.</td>
+            </tr>
+            <tr>
+                <td><span class="joker solstice"></span><p><span class="illustrious"><a href="https://www.twitch.tv/ersolstice">ERSolstice</a></span></p></td>
+                <td><p><span class="ability">--Double Vision--</span></p><p>Scored cards are retriggered if they match either the rank or suit of the leftmost card</p></td>
+                <td>The original idea was to gain chips to add to the score based on triggering the boss blind, a reference to the running joke in Solstice's community of having poor eyesight (which she allowed me to make). This was changed to a less situational ability after some testing.</td>
+            </tr>
+            <tr>
+                <td><span class="joker keksi"></span><p><span class="illustrious"><a href="https://x.com/UwUkeksi/media">Keksi</a></span></p></td>
+                <td><p><span class="ability">--Hex Magic--</span></p><p>Scoring 6s with no Edition are converted to Polychrome, Retrigger all Polychrome cards</p></td>
+                <td>Keksi's internet persona Evelyn is a succubus, so I had the quick idea to connect it to the theme of 6's. Choosing the Polychrome as the modifier took a little work to balance, but being relegated to boost only one rank specifically seemed like a good workaround.</td>
+            </tr>
+            <tr>
+                <td><span class="joker moki"></span><p><span class="illustrious"><a href="https://www.twitch.tv/mokicosplay">MokiCosplay</a></span></p></td>
+                <td><p><span class="ability">--Showstopper--</span></p><p><span class="xmult">X1.0</span> Mult, increases by <span class="xmult">X0.1</span> Mult if played hand is different from the previous hand. Otherwise, resets.</p></td>
+                <td>Moki has multiple Minecraft SMP series with his friends they stream over Twitch. I decided to make the effect based on how every time they stream is of a different series.</td>
+            </tr>
+        </table>
+
+        <footer class="is-black">
+            <div>
+                <p class="has-text-light has-text-centered">Contact me: <a class="has-text-grey-light" href="mailto:jamesp.orr917@gmail.com">jamesp.orr917@gmail.com</a>  /  917-943-6839</p>
+            </div>
+        </footer>
+
+        <script src="src/headerControls.js"></script>
     </body>
 </html>
