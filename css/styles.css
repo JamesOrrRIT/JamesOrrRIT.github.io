@@ -77,9 +77,9 @@ footer {
 /*Friends of James Jokers */
 table {
     border: 3px solid black;
-    width: 85%;
+    width: 85vw;
     margin: auto;
-    font-size: 24px;
+    font-size: clamp(1rem, 1.5vw, 2rem);
     text-align: center;
     margin-top: 40px;
 }
@@ -90,6 +90,7 @@ tr, th {
 
 tr > td:nth-child(1) {
     width: 20%;
+    height: clamp(25vh, 1.5vw, 40vh);
 }
 
 tr > td:nth-child(2) {
@@ -97,12 +98,14 @@ tr > td:nth-child(2) {
     border-left: 2px solid black;
     border-right: 2px solid black;
     vertical-align: middle;
+    height: clamp(25vh, 1.5vw, 40vh);
 }
 
 tr > td:nth-child(3) {
     width: 40%;
     text-align: left;
     vertical-align: middle;
+    height: clamp(25vh, 1.5vw, 40vh);
 }
 
 .common {
@@ -168,6 +171,7 @@ tr > td:nth-child(3) {
     margin: auto 6px;
     background-image: url("../images/friendsOfJames_JokersSheet.png");
     background-repeat: no-repeat;
+    object-fit: contain;
 }
 
 .joker.salt {
